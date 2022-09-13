@@ -3,6 +3,7 @@ const app = express()
 const router = express.Router()
 const consola = require('consola')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 const {Schema,model} = require('mongoose')
 const dbConnection = require('./Dbconnection')
@@ -25,4 +26,4 @@ const portConnection = function(value){
 
 
 
-module.exports = {app,router,express,consola,portConnection,dbConnection,Schema,model,mongoose} 
+module.exports = {app,router,express,consola,portConnection,dbConnection,Schema,model,mongoose,cors} 
